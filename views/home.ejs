@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+
+<h1>Home</h1>
+<p><%= homeInput %></p>
+
+<div class="blog">
+  <% allPosts.forEach(function(post) { %>
+    <div class="post">
+      <h2><%=post.postTitle%></h2>
+      <p><%=post.postContent%></p>
+    </div>
+  <% }) %>
+</div>
+
+<%- include('partials/footer'); -%>
